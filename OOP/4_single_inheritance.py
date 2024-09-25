@@ -12,5 +12,5 @@ class B(A):
     def __init__(self, name) -> None:
         super().__init__(name)
 
-obj = B("Sayed")
+obj = B("Asif")
 obj.display()

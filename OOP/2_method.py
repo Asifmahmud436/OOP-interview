@@ -3,7 +3,7 @@ class A:
     pass
 
 def display():
-    print("I am Methods")
+    print("I am a Method")
 
 obj = A()
 obj.value = display

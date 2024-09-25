@@ -1,15 +1,11 @@
 
-class A:
-    __value = 5
-    def __init__(self) -> None:
-        pass
-    def display(self):
-        print(self.__value)
+# A normal class with no private encapsulation is public,or public encapsulation
+class Person:
+    def __init__(self,person,age):
+        self.person = person
+        self.age = age
+    def info(self):
+        return f'Dear {self.person}, you are {self.age} years old.'
 
-obj = A()
-
-obj.__value = 10
-print(obj.__value)
-obj.display()
-
-print(obj.__dict__)
+obj1 = Person("Asif",24)
+print(obj1.info())
